@@ -219,7 +219,6 @@ body:not(.home-page) .nav-home-link {
 
 .hero-member {
   height: 400px;
-  background-image: url("../photos/shaxodat.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -228,6 +227,10 @@ body:not(.home-page) .nav-home-link {
   text-align: center;
   color: #fff;
   padding: 2rem;
+}
+
+.shaxodat-bg {
+  background-image: url("../photos/shaxodat.jpg");
 }
 
 .hero-text {

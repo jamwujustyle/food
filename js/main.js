@@ -44,4 +44,37 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.append(container.firstChild);
       }
     });
+
+  // Scroll-reveal animation logic using Intersection Observer
+  // Automatically add reveal class to common elements
+  const elementsToReveal = document.querySelectorAll(
+    "section, .hero, .about, .reflection-content, .reflection-box, .quote-box, h1, h2, h3, p:not(footer p), .members li, .tags"
+  );
+
+  // Add reveal class to elements that don't already have it
+  elementsToReveal.forEach((el) => {
+    if (!el.classList.contains("reveal")) {
+      el.classList.add("reveal");
+    }
+  });
+
+  // Now observe all elements with the reveal class
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Stop observing after it's visible
+        }
+      });
+    },
+    {
+      threshold: 0.15, // Trigger when 15% of the element is visible
+      rootMargin: "0px 0px -50px 0px", // Start animation slightly before element enters viewport
+    }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
 });

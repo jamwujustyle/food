@@ -721,7 +721,12 @@ body:not(.home-page) .nav-home-link {
 
 .hero-member {
   height: 500px;
-  background-image: url("../photos/shaxodat.jpg");
+  background: linear-gradient(
+    135deg,
+    var(--primary-orange),
+    var(--accent-purple),
+    var(--accent-blue)
+  );
   background-size: cover;
   background-position: center;
   display: flex;
@@ -734,6 +739,15 @@ body:not(.home-page) .nav-home-link {
   overflow: hidden;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual member hero backgrounds - add specific class to each member's page */
+.hero-member.has-photo {
+  background-size: cover;
+}
+
+.hero-member.shaxodat {
+  background-image: url("../photos/shaxodat.jpg");
 }
 
 .hero-member::before {

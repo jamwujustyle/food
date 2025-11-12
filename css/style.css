@@ -88,12 +88,9 @@ nav a:hover {
 }
 
 .about {
-  background-color: #fff;
+  background-color: #f5f1ed;
   padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 .about h2 {
@@ -101,6 +98,13 @@ nav a:hover {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 footer {

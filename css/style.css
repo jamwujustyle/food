@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf6;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f5f1e9;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #d98c5f;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d98c5f;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: "Lora", serif;
+  font-size: 4rem;
+  color: #d98c5f;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tag {
+  background-color: #fceee3;
+  color: #d98c5f;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.about {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about h2 {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+footer h3 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 2rem;
+}

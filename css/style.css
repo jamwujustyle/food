@@ -213,6 +213,10 @@ footer h3 {
   display: none;
 }
 
+body:not(.home-page) .nav-home-link {
+  display: none;
+}
+
 .hero-member {
   height: 400px;
   background-image: url("../photos/shaxodat.jpg");

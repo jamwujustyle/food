@@ -10,9 +10,13 @@ body {
 }
 
 header {
-  background-color: #f5f1e9;
+  background-color: rgba(245, 241, 233, 0.8);
   padding: 1rem 2rem;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 nav {
@@ -191,4 +195,69 @@ footer h3 {
   font-size: 1.5rem;
   color: #d98c5f;
   margin: 0;
+}
+
+.back-to-home {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.home-page .back-to-home {
+  display: none;
+}
+
+.hero-member {
+  height: 400px;
+  background-image: url("../photos/shaxodat.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.role {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #d98c5f;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.reflection-box {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.reflection-box:hover {
+  border-left-color: #f5b895;
+  transform: translateX(5px);
+}
+
+.quote-box::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #d98c5f;
+  margin: 0 auto 2rem;
 }

@@ -69,12 +69,31 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #4a4a4a;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
 }
 
 nav a:hover {
   color: #d98c5f;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #d98c5f;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::before {
+  width: 80%;
 }
 
 .hero {

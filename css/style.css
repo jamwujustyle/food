@@ -389,3 +389,41 @@ h3.reveal {
   transform: scale(0.95);
   transition-duration: 0.8s;
 }
+
+.research-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f5f1ed;
+  border-bottom: 1px solid #eee;
+}
+
+.research-hero h1 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  color: #d98c5f;
+  margin-bottom: 0.5rem;
+}
+
+.research-hero p {
+  font-size: 1.1rem;
+  color: #6c6c6c;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.research-section {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.research-section h2 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

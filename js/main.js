@@ -1,4 +1,55 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Flag rotation functionality
+  const flags = [
+    "🇺🇳", // United Nations
+    "🇺🇿",
+    "🇺🇸", // United States
+    "🇬🇧", // United Kingdom
+    "🇨🇦", // Canada
+    "🇧🇷", // Brazil
+    "🇲🇽", // Mexico
+    "🇫🇷", // France
+    "🇩🇪", // Germany
+    "🇮🇹", // Italy
+    "🇪🇸", // Spain
+    "🇷🇺", // Russia
+    "🇨🇳", // China
+    "🇯🇵", // Japan
+    "🇰🇷", // South Korea
+    "🇮🇳", // India
+    "🇦🇪", // UAE
+    "🇿🇦", // South Africa
+    "🇪🇬", // Egypt
+    "🇦🇺", // Australia
+    "🇰🇿", // Kazakhstan
+  ];
+
+  let currentFlagIndex = 0;
+
+  function updateFlag() {
+    const flagDisplay = document.getElementById("flag-display");
+    if (flagDisplay) {
+      // Add fade-out class
+      flagDisplay.classList.add("fade-out");
+
+      // Wait for fade-out animation to complete, then change flag and fade in
+      setTimeout(() => {
+        flagDisplay.textContent = flags[currentFlagIndex];
+        currentFlagIndex = (currentFlagIndex + 1) % flags.length;
+
+        // Remove fade-out class to trigger fade-in
+        flagDisplay.classList.remove("fade-out");
+      }, 400); // Match CSS transition duration
+    }
+  }
+
+  // Initial flag display
+  setTimeout(() => {
+    updateFlag();
+    // Rotate flags every 2.5 seconds (2000ms display + 500ms for transitions)
+    setInterval(updateFlag, 2500);
+  }, 100);
+
   const isGitHubPages = window.location.hostname.includes("github.io");
   const basePath = isGitHubPages ? "/food" : "";
 

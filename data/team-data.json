@@ -36,7 +36,16 @@
     "photo": ""
   },
   "amir": {},
-  "artur": {},
+  "artur": {
+    "name": "Artur Krasnogorov",
+    "autobiography": "My name is Artur. Four years ago I was a professional volleyball player; now I balance several tasks: coach and founder of my volleyball league and academy, service consultant at BYD, and student of computer science with keen interest in back-end development like Java, Go, PHP and AI automation. I like to teach kids volleyball, learning new skills, and explore the topics of sustainability, citizen journalism, and new challenges in the field of cybersecurity. Besides that, I am pursuing a master of Data Science and AI with the goal of Politecnico di Milano and still play volleyball and train in the gym. I am generally interested in sport, technology, sustainability and education: to me, it is necessary to unite the practice - on the court and with theory - in the classroom, creating something valuable to individuals and communities.",
+    "reflection": {
+      "keyLearnings": "During this course we have learned the intersections between foodways, the systematic patterns of the ways people obtain, prepare, share, and eat food, and identity, power, and globalization. Among the key theoretical lessons, the fact that food is not just biological sustenance, but a highly symbolic phenomenon must be mentioned: food creates cultural identity, expresses social status, strengthens group membership, and serves as a power terrain.\nWe also came to know how globalisation and migration are transforming food identities: food can travel, get mixed up, local food culture comes under the influence of global food culture, but food is also a place of resistance and belonging.",
+      "motto": "What you eat speaks more than your diet - it tells your story.\nThis expression is a reminder to me that my personal background is not merely represented in what I do, but also in how I interact with culture, community and knowledge. Similar to food, there is memory, identity and power, and I envision my courses as a blend of various ingredients (volleyball, software, sustainability, education) into a significant recipe of difference.",
+      "applyingThemes": "I have already experienced how culture, communication and identity relate through my volleyball league and academy and my role as a coach: children with different backgrounds gather, bring their food culture, their language, their methods of sharing. The knowledge of food, language and identity relationships assists me in creating inclusive settings in which diversity based on culture is celebrated. I will use this awareness in further software development (billing systems, management platforms) by designing tools that would take into account multilingual users, cultural variations, and social power relations (how access to food or sports training can be mediated by class or gender). In all my work as coach, consultant, student, I will be informed by the idea that our everyday practices (what we eat, how we share, how we talk, and so on) inform our identities and our power relations and therefore, designing wisely means knowing the cultural grid behind a simple act, such as having a meal."
+    },
+    "photo": "artur.jpg"
+  },
   "asila": {
     "name": "Asila Azizbekova",
     "role": "",

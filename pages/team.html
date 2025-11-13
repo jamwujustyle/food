@@ -10,37 +10,39 @@
     <main>
       <section class="team-list about">
         <h1>Meet Our Research Team</h1>
-        <ul class="members">
-          <li>
-            <a href="zhamshid.html">Abdulazizov, Zhamshidbek (4263145)</a>
-          </li>
-          <li>
-            <a href="shohruxbek.html">Ahmadjonov, Shohruxbek (4253474)</a>
-          </li>
-          <li><a href="temur.html">Aliev, Temur A. (4195521)</a></li>
-          <li>
-            <a href="shaxodatxon.html">
-              <img
-                src="../photos/shaxodat.jpg"
-                alt="Shaxodatxon Alimova"
-                class="team-photo"
-              />
-              Alimova, Shaxodatxon (4220491)
-            </a>
-          </li>
-          <li><a href="kozimbek.html">Aminov, Kozimbek (4220381)</a></li>
-          <li><a href="asilbek.html">Asatov, Asilbek (4218073)</a></li>
-          <li><a href="azimjon.html">Asatov, Azimjon (4216998)</a></li>
-          <li><a href="aziz.html">Axmedzyanov, Aziz (4204787)</a></li>
-          <li><a href="asila.html">Azizbekova, Asila (4246429)</a></li>
-          <li><a href="amir.html">Burxonov, Amir Burkhanov (4222834)</a></li>
-          <li><a href="jonibek.html">Erkinov, Jonibek (4226162)</a></li>
-          <li><a href="nodirbek.html">Erkinov, Nodirbek (4209825)</a></li>
-          <li><a href="artur.html">Krasnogorov, Artur (4221856)</a></li>
-        </ul>
+        <ul class="members" id="team-list"></ul>
       </section>
     </main>
 
     <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("../data/team-data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const teamList = document.getElementById("team-list");
+            for (const memberKey in data) {
+              const member = data[memberKey];
+              if (member.name) {
+                const listItem = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = `member.html?name=${memberKey}`;
+
+                if (member.photo) {
+                  const img = document.createElement("img");
+                  img.src = `../photos/${member.photo}`;
+                  img.alt = member.name;
+                  img.classList.add("team-photo");
+                  link.appendChild(img);
+                }
+
+                link.appendChild(document.createTextNode(member.name));
+                listItem.appendChild(link);
+                teamList.appendChild(listItem);
+              }
+            }
+          });
+      });
+    </script>
   </body>
 </html>

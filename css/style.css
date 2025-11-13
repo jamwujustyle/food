@@ -217,31 +217,34 @@ body:not(.home-page) .nav-home-link {
   display: none;
 }
 
-.hero-member {
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+.member-header {
   text-align: center;
-  color: #fff;
-  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
-.shaxodat-bg {
-  background-image: url("../photos/shaxodat.jpg");
+.hero-image-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#member-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 8px;
+  max-width: 400px;
+  margin: 1rem auto 0;
+  color: #4a4a4a;
+  background-color: #f5f1ed;
 }
 
 .hero-text h1 {
   font-family: "Lora", serif;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 

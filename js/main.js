@@ -65,22 +65,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initial flag display synchronized with stored timing
-  setTimeout(() => {
+  // Function to initialize flag rotation (called after header is loaded)
+  function initializeFlagRotation() {
     currentFlagIndex = getCurrentFlagIndex();
     const flagDisplay = document.getElementById("flag-display");
     if (flagDisplay) {
       flagDisplay.textContent = flags[currentFlagIndex];
-    }
 
-    // Schedule the first update at the correct time
-    const timeUntilNext = getTimeUntilNextFlag();
-    setTimeout(() => {
-      updateFlag();
-      // Then continue regular rotation
-      setInterval(updateFlag, flagRotationInterval);
-    }, timeUntilNext);
-  }, 100);
+      // Schedule the first update at the correct time
+      const timeUntilNext = getTimeUntilNextFlag();
+      setTimeout(() => {
+        updateFlag();
+        // Then continue regular rotation
+        setInterval(updateFlag, flagRotationInterval);
+      }, timeUntilNext);
+    }
+  }
 
   const isGitHubPages = window.location.hostname.includes("github.io");
   const basePath = isGitHubPages ? "/food" : "";
@@ -113,6 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
       while (container.firstChild) {
         document.body.prepend(container.firstChild);
       }
+      // Initialize flag rotation after header is loaded
+      initializeFlagRotation();
     });
 
   // Fetch and inject footer, then rewrite its links

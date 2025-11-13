@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Flag rotation functionality
+  // Flag rotation functionality with persistence
   const flags = [
     "🇺🇳", // United Nations
     "🇺🇿",
@@ -24,7 +24,29 @@ document.addEventListener("DOMContentLoaded", function () {
     "🇰🇿", // Kazakhstan
   ];
 
+  const flagRotationInterval = 2500; // milliseconds
   let currentFlagIndex = 0;
+
+  // Initialize or retrieve flag rotation start time
+  if (!localStorage.getItem("flagRotationStartTime")) {
+    localStorage.setItem("flagRotationStartTime", Date.now().toString());
+  }
+
+  // Calculate current flag index based on elapsed time
+  function getCurrentFlagIndex() {
+    const startTime = parseInt(localStorage.getItem("flagRotationStartTime"));
+    const elapsedTime = Date.now() - startTime;
+    const cyclesPassed = Math.floor(elapsedTime / flagRotationInterval);
+    return cyclesPassed % flags.length;
+  }
+
+  // Calculate time until next flag change
+  function getTimeUntilNextFlag() {
+    const startTime = parseInt(localStorage.getItem("flagRotationStartTime"));
+    const elapsedTime = Date.now() - startTime;
+    const timeInCurrentCycle = elapsedTime % flagRotationInterval;
+    return flagRotationInterval - timeInCurrentCycle;
+  }
 
   function updateFlag() {
     const flagDisplay = document.getElementById("flag-display");
@@ -34,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Wait for fade-out animation to complete, then change flag and fade in
       setTimeout(() => {
+        currentFlagIndex = getCurrentFlagIndex();
         flagDisplay.textContent = flags[currentFlagIndex];
-        currentFlagIndex = (currentFlagIndex + 1) % flags.length;
 
         // Remove fade-out class to trigger fade-in
         flagDisplay.classList.remove("fade-out");
@@ -43,11 +65,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initial flag display
+  // Initial flag display synchronized with stored timing
   setTimeout(() => {
-    updateFlag();
-    // Rotate flags every 2.5 seconds (2000ms display + 500ms for transitions)
-    setInterval(updateFlag, 2500);
+    currentFlagIndex = getCurrentFlagIndex();
+    const flagDisplay = document.getElementById("flag-display");
+    if (flagDisplay) {
+      flagDisplay.textContent = flags[currentFlagIndex];
+    }
+
+    // Schedule the first update at the correct time
+    const timeUntilNext = getTimeUntilNextFlag();
+    setTimeout(() => {
+      updateFlag();
+      // Then continue regular rotation
+      setInterval(updateFlag, flagRotationInterval);
+    }, timeUntilNext);
   }, 100);
 
   const isGitHubPages = window.location.hostname.includes("github.io");

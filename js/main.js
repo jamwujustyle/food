@@ -1,27 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Flag rotation functionality with persistence
   const flags = [
-    "🇺🇳", // United Nations
-    "🇺🇿",
-    "🇺🇸", // United States
-    "🇬🇧", // United Kingdom
-    "🇨🇦", // Canada
-    "🇧🇷", // Brazil
-    "🇲🇽", // Mexico
-    "🇫🇷", // France
-    "🇩🇪", // Germany
-    "🇮🇹", // Italy
-    "🇪🇸", // Spain
-    "🇷🇺", // Russia
-    "🇨🇳", // China
-    "🇯🇵", // Japan
-    "🇰🇷", // South Korea
-    "🇮🇳", // India
-    "🇦🇪", // UAE
-    "🇿🇦", // South Africa
-    "🇪🇬", // Egypt
-    "🇦🇺", // Australia
-    "🇰🇿", // Kazakhstan
+    "un", // United Nations
+    "uz", // Uzbekistan
+    "us", // United States
+    "gb", // United Kingdom
+    "ca", // Canada
+    "br", // Brazil
+    "mx", // Mexico
+    "fr", // France
+    "de", // Germany
+    "it", // Italy
+    "es", // Spain
+    "ru", // Russia
+    "cn", // China
+    "jp", // Japan
+    "kr", // South Korea
+    "in", // India
+    "ae", // UAE
+    "za", // South Africa
+    "eg", // Egypt
+    "au", // Australia
+    "kz", // Kazakhstan
   ];
 
   const flagRotationInterval = 2500; // milliseconds
@@ -57,7 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
       // Wait for fade-out animation to complete, then change flag and fade in
       setTimeout(() => {
         currentFlagIndex = getCurrentFlagIndex();
-        flagDisplay.textContent = flags[currentFlagIndex];
+
+        // Remove all existing flag classes
+        flagDisplay.className = flagDisplay.className
+          .split(" ")
+          .filter((c) => !c.startsWith("fi-"))
+          .join(" ");
+
+        // Add the new flag class
+        flagDisplay.classList.add("fi", `fi-${flags[currentFlagIndex]}`);
 
         // Remove fade-out class to trigger fade-in
         flagDisplay.classList.remove("fade-out");
@@ -70,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
     currentFlagIndex = getCurrentFlagIndex();
     const flagDisplay = document.getElementById("flag-display");
     if (flagDisplay) {
-      flagDisplay.textContent = flags[currentFlagIndex];
+      // Set initial flag
+      flagDisplay.classList.add("fi", `fi-${flags[currentFlagIndex]}`);
 
       // Schedule the first update at the correct time
       const timeUntilNext = getTimeUntilNextFlag();

@@ -797,3 +797,95 @@ h3.reveal {
 .research-section:nth-child(3n + 3) {
   border-left-color: #c97d52;
 }
+/* References Section Styles */
+.references-section {
+  background: transparent;
+  border: none;
+  border-left: none;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  box-shadow: none;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.references-section::before {
+  display: none;
+}
+
+.references-section:hover {
+  transform: none;
+}
+
+.references-section h2 {
+  color: #b87a56;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.references-section h2::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #b87a56 50%,
+    transparent 100%
+  );
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.references-list li {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+  margin-bottom: 0;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: left;
+  background: linear-gradient(135deg, #fff 0%, #fdfaf6 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-left: 3px solid #e8ddd1;
+}
+
+.references-list li::before {
+  content: "📚";
+  position: absolute;
+  left: 1.2rem;
+  top: 1.5rem;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.references-list li em {
+  font-style: italic;
+  color: #d98c5f;
+  font-weight: 500;
+}
+
+/* Hover effect for references */
+.references-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(217, 140, 95, 0.15);
+  border-left-color: #d98c5f;
+  background: linear-gradient(135deg, #fdfaf6 0%, #fff 100%);
+}
+
+.references-list li:hover::before {
+  transform: scale(1.2) rotate(5deg);
+}

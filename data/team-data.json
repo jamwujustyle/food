@@ -44,6 +44,7 @@
       "motto": "“Cooking is remembering.”",
       "applyingThemes": "I will use these lessons both in my academic work and daily life. Academically, I want to \nexplore how migrant communities use food and language to maintain cultural identity, \nparticularly through intergenerational storytelling and bilingual recipes. In everyday life, I try \nto celebrate cultural diversity by learning original dish names, sharing meals, and \nappreciating the stories behind each recipe. This course taught me that eating is not just \nconsumption — it is communication, empathy, and a way to build identity and connection \nacross borders."
     },
+    "quote": "A recipe has no soul. You, as the cook, must bring soul to the recipe.",
     "photo": "amir.jpg"
   },
   "artur": {
@@ -55,6 +56,7 @@
       "motto": "What you eat speaks more than your diet - it tells your story.\nThis expression is a reminder to me that my personal background is not merely represented in what I do, but also in how I interact with culture, community and knowledge. Similar to food, there is memory, identity and power, and I envision my courses as a blend of various ingredients (volleyball, software, sustainability, education) into a significant recipe of difference.",
       "applyingThemes": "I have already experienced how culture, communication and identity relate through my volleyball league and academy and my role as a coach: children with different backgrounds gather, bring their food culture, their language, their methods of sharing. The knowledge of food, language and identity relationships assists me in creating inclusive settings in which diversity based on culture is celebrated. I will use this awareness in further software development (billing systems, management platforms) by designing tools that would take into account multilingual users, cultural variations, and social power relations (how access to food or sports training can be mediated by class or gender). In all my work as coach, consultant, student, I will be informed by the idea that our everyday practices (what we eat, how we share, how we talk, and so on) inform our identities and our power relations and therefore, designing wisely means knowing the cultural grid behind a simple act, such as having a meal."
     },
+    "quote": "Food is the ingredient that binds us together.",
     "photo": "artur.jpg"
   },
   "asila": {
@@ -72,15 +74,37 @@
   "asilbek": {
     "name": "Asilbek Asatov",
     "role": "4218073",
+    "autobiography": "",
+    "reflection": {
+      "keyLearnings": "",
+      "motto": "",
+      "applyingThemes": ""
+    },
+    "quote": "To eat is a necessity, but to eat intelligently is an art.",
     "photo": "asil.jpg"
   },
   "aziz": {
     "name": "Aziz Axmedzyanov",
-    "role": "4204787"
+    "role": "4204787",
+    "autobiography": "",
+    "reflection": {
+      "keyLearnings": "",
+      "motto": "",
+      "applyingThemes": ""
+    },
+    "quote": "We all eat, and it would be a sad waste of opportunity to eat badly.",
+    "photo": ""
   },
   "jonibek": {
     "name": "Jonibek Erkinov",
     "role": "4226162",
+    "autobiography": "",
+    "reflection": {
+      "keyLearnings": "",
+      "motto": "",
+      "applyingThemes": ""
+    },
+    "quote": "Food brings people together on many different levels.",
     "photo": "jonibek.jpg"
   },
   "kozimbek": {
@@ -92,11 +116,20 @@
       "motto": "“Food is memory made visible.”\nThis idea emphasizes the emotional and psychological layers of food. Every recipe carries memories of movement, survival, and identity. Although I am not deeply involved in agricultural studies, this perspective helped me see that food is not only about its material production but also about the memories and meanings people attach to it. For my family, food has always been a way to stay connected to our cultural roots — not just through taste, but through the stories and emotions it brings.",
       "applyingThemes": "I plan to apply what I learned by paying attention to how individuals express belonging through cooking, storytelling, and the language surrounding food. While I may not analyze food systems from an agrarian or industrial standpoint, I am interested in how migrants recreate traditional dishes to maintain their identity and how language in recipes, menus, and family conversations helps preserve cultural heritage.\nIn my future studies or career, I hope to continue exploring how cultural exchange through food can build bridges between communities. Food brings people together beyond borders, and by examining these psychological and cultural connections, we can foster empathy and appreciation for diversity"
     },
+    "quote": "The secret of success in life is to eat what you like and let the food fight it out inside.",
     "photo": "photo_2025-11-14_10-48-26.jpg"
   },
   "nodirbek": {
     "name": "Nodirbek Erkinov",
-    "role": "4209825"
+    "role": "4209825",
+    "autobiography": "My name is Erkinov Nodirbek, and I am currently a senior student at Webster University, majoring in International Relations. Ever since my childhood, I have been driven by a strong desire to improve myself and broaden my horizons. Growing up, I was passionate about football, which taught me discipline and teamwork, and I also enjoyed learning the English language, a skill that opened many doors for me later in life.\n\nOne of the milestones in my personal development was starting my own YouTube channel. Creating content and speaking in front of an audience significantly boosted my confidence and helped me express my ideas more clearly. Throughout school, I was a dedicated student and consistently earned strong grades, which motivated me to aim higher in my academic journey.\n\nAfter graduating from school, I enrolled at Westminster Lyceum, where I continued to challenge myself both academically and personally. Later, I had the incredible opportunity to study in China through a language program. This experience exposed me to a new culture, broadened my worldview, and strengthened my interest in international affairs.\n\nNow, as I approach graduation from Webster University, I am eager to continue my academic path abroad and pursue a Master’s degree, aiming to further develop my skills and contribute to the global community.",
+    "reflection": {
+      "keyLearnings": "",
+      "motto": "",
+      "applyingThemes": ""
+    },
+    "quote": "Life is uncertain. Eat dessert first.",
+    "photo": "nodir.jpg"
   },
   "shohruxbek": {
     "name": "Shohruxbek Ahmadjonov",
@@ -107,6 +140,7 @@
       "motto": "\"Every dish is a story carried across borders\" This motto captures how migration transforms food into a language of memory—each meal holding pieces of where we come from, what we’ve left behind, and what we carry forward. It reflects the idea that cooking is not just preparing food, but preserving identity, history, and family through taste and tradition.",
       "applyingThemes": "At the same time, the language of home cooking evolves, As the migrants are adapted and can adapt to the new local influences, dishes change, also ingredients effecting the dynamic nature of identity itself. This blending represents of how that culture is not static - it travels, transforms and survives over the creativity and care. Ultimately, the kitchen becomes a powerful site of resistance and renewal a place where memory is not lost but reborn through every shared meal. Thus, home cooking stands as both a personal and collective archive—a living testament to how migration reshapes who we are, while still allowing us to taste where we come from."
     },
+    "quote": "One cannot think well, love well, sleep well, if one has not dined well.",
     "photo": "shohrux.jpg"
   },
   "temur": {

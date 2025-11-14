@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Scroll-reveal animation logic using Intersection Observer
   // Automatically add reveal class to common elements
   const elementsToReveal = document.querySelectorAll(
-    "section, .hero, .about, .reflection-content, .reflection-box, .quote-box, h1, h2, h3, p:not(footer p), .members li, .tags"
+    "section, .hero, .about, .reflection-box, .quote-box, h1, h2, h3, p:not(footer p), .members li, .tags"
   );
 
   // Add reveal class to elements that don't already have it

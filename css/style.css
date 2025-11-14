@@ -889,3 +889,9 @@ h3.reveal {
 .references-list li:hover::before {
   transform: scale(1.2) rotate(5deg);
 }
+
+.references-list a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

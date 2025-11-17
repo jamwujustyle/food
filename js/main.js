@@ -122,6 +122,20 @@ document.addEventListener("DOMContentLoaded", function () {
       while (container.firstChild) {
         document.body.prepend(container.firstChild);
       }
+
+      // Highlight active navigation link
+      const navLinks = document.querySelectorAll("nav ul a");
+      const currentPage = window.location.pathname.endsWith("/")
+        ? window.location.pathname + "index.html"
+        : window.location.pathname;
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPage.endsWith(linkPath)) {
+          link.classList.add("active");
+        }
+      });
+
       // Initialize flag rotation after header is loaded
       initializeFlagRotation();
     });

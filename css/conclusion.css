@@ -1,0 +1,321 @@
+/* Conclusion Page Specific Styles */
+
+/* Hero Section */
+.conclusion-hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  background: linear-gradient(135deg, #d98c5f 0%, #e8a577 50%, #d98c5f 100%);
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientFlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.conclusion-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.conclusion-hero h1 {
+  font-family: "Lora", serif;
+  font-size: 3.5rem;
+  color: white;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Content Container */
+.conclusion-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.conclusion-content h1 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  color: #d98c5f;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.conclusion-content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #d98c5f, transparent);
+  border-radius: 2px;
+}
+
+.conclusion-content h2 {
+  font-family: "Lora", serif;
+  font-size: 2.2rem;
+  color: #d98c5f;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.conclusion-content h2::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #e8a577;
+  font-size: 1.5rem;
+}
+
+.conclusion-content > p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+  text-align: justify;
+  background: linear-gradient(135deg, #fff 0%, #fdfaf6 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e8a577;
+  transition: all 0.3s ease;
+}
+
+.conclusion-content > p:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 20px rgba(217, 140, 95, 0.15);
+  border-left-color: #d98c5f;
+}
+
+/* Highlighted Conclusion Box */
+.conclusion-highlight {
+  background: linear-gradient(135deg, #fceee3 0%, #fbe5d6 100%);
+  border: 3px solid #d98c5f;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(217, 140, 95, 0.2);
+}
+
+.conclusion-highlight::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 8rem;
+  font-family: "Lora", serif;
+  color: rgba(217, 140, 95, 0.1);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.conclusion-highlight p {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+  color: #4a4a4a;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.conclusion-highlight p:hover {
+  transform: none !important;
+}
+
+/* Blog Section */
+.blog-section {
+  background: linear-gradient(135deg, #f5f1ed 0%, #fdfaf6 100%);
+  border-radius: 16px;
+  padding: 3rem;
+  margin-top: 4rem;
+  border: 2px solid #e8ddd1;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-section::before {
+  content: "💭";
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  opacity: 0.2;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.blog-section h2 {
+  padding-left: 0 !important;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.blog-section h2::before {
+  display: none !important;
+}
+
+.blog-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d98c5f, transparent);
+}
+
+.blog-section p {
+  background: white !important;
+  border-left: none !important;
+  padding: 1.5rem !important;
+  margin-top: 2rem;
+}
+
+.blog-section p:hover {
+  transform: none !important;
+}
+
+/* Key Takeaway Boxes */
+.takeaway-box {
+  background: linear-gradient(135deg, #fff 0%, #fdfaf6 100%);
+  border-left: 5px solid #d98c5f;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-left: 2rem;
+}
+
+.takeaway-box::before {
+  content: "→";
+  position: absolute;
+  left: -2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #d98c5f;
+}
+
+.takeaway-box p {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.takeaway-box p:hover {
+  transform: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .conclusion-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .conclusion-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .conclusion-content h2 {
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+  }
+
+  .conclusion-content > p {
+    font-size: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .conclusion-highlight {
+    padding: 2rem 1.5rem;
+  }
+
+  .conclusion-highlight::before {
+    font-size: 5rem;
+    top: -10px;
+    left: 10px;
+  }
+
+  .blog-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .blog-section::before {
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .takeaway-box {
+    margin-left: 1.5rem;
+  }
+
+  .takeaway-box::before {
+    left: -2rem;
+    font-size: 1.5rem;
+  }
+}

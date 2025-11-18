@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "us", // United States
     "gb", // United Kingdom
     "ca", // Canada
+    "th", // Thailand
     "br", // Brazil
     "mx", // Mexico
     "fr", // France

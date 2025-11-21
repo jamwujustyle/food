@@ -83,26 +83,15 @@
     "quote": "To eat is a necessity, but to eat intelligently is an art.",
     "photo": "asil.jpg"
   },
-  "aziz": {
-    "name": "Aziz Axmedzyanov",
-    "role": "4204787",
-    "autobiography": "",
-    "reflection": {
-      "keyLearnings": "",
-      "motto": "",
-      "applyingThemes": ""
-    },
-    "quote": "We all eat, and it would be a sad waste of opportunity to eat badly.",
-    "photo": ""
-  },
+
   "jonibek": {
     "name": "Jonibek Erkinov",
     "role": "Content Writer (Global Reception, Identifying the Gap)",
-    "autobiography": "",
+    "autobiography": "I am a junior student with 21 years in the international Studies major at Webster University in the name of Erkinov Jonibek. I have never ceased to believe how food unites people and cultures, as well as memories. As a child in Uzbekistan, the food was not only something that kept us alive every day but also a family, festivity, and identity. Since we used to exchange plov at holidays, I also knew at a young age that cooking is more than just a taste because it uses emotional and cultural contexts.\nThis has been enhanced after studying abroad. Since I live in a multicultural setting, I regularly observe how food establishes common ground as well as prompts people to feel related in humanity. I get a great sense of belonging whenever I prepare home-cooked meals, and is associated with knowing what and where I belong.\nCooking interests me as a recreational pursuit and I consider it as a platform where one can find identity by doing so. I like to share the traditional Uzbek dishes with the contemporary impact and trying dishes of another culture. As an academic, I am interested in learning how migration, language, and food can intersect to form personal and group identities. This course, Food, Language, and Identity, has taught me that cooking can be seen as a method of expression and cultural communication that can help people to cross the boundaries.",
     "reflection": {
-      "keyLearnings": "",
-      "motto": "",
-      "applyingThemes": ""
+      "keyLearnings": "During this course, I have learned how food is a cultural system of meaning that has shown relations between identity, memory, and power. Sidney Mintz (1985) considers the global foodways based on the histories of colonization and economies that shape societies in defining the ways in which they identify themselves through their food. Arjun Appadurai (1988) stresses the fact that national cuisines and food identities are not stable they are recreated with the migration, narration, and globalization.\nLanguage is also an important aspect in this. The manner in which individuals narrate meals, translate recipes or some culinary expressions illustrates the manner in which culture and identity are maintained or modified. Since Lisa Heldke (2003) argues in the context of cultural food adventurism, and bell Hooks (1992) offers criticism of the idea of representation, I got to understand that food may be a sign of empowerment or inequality, depending on who is telling the story.",
+      "motto": "“Cooking is remembering.”\nThis is the main message that I will take out of this course. It is not just a recreation of flavor, the act of cooking: it is a re-creation of memory. Every food that is served is a story about location, family and self. Food represents a living history to migrants; it helps them retain their home in a new world. In my case, food helps me relate my current life in a foreign country with the way things used to happen in my Uzbek background by ascertaining that food is one of the most common lingo we all speak.",
+      "applyingThemes": "I will use these lessons in my academic and personal settings. In the study, I would like to examine the methods applied by migrant communities in order to sustain emotional and cultural continuity through food and language. Of particular interest to me is how bilingual cooking stories both as told at home and over the Internet serve to uphold intergenerational memory.\nIn my day-to-day activities, I attempt to celebrate cultural diversity via food: I learn the original names of dishes, their background, and eat together in the spirit of the authenticity. The course has taught me that I need not think of eating as a consumption activity; it is a communication, empathetic, and identity-building activity."
     },
     "quote": "Food brings people together on many different levels.",
     "photo": "jonibek.jpg"
@@ -153,6 +142,18 @@
       "applyingThemes": "I will apply the lessons from this course in both academic research and daily life. Academically, I aim to study how migrant communities use food and language to preserve cultural identity, especially across generations. I am particularly interested in how recipes, cooking practices, and culinary stories shared online or in families help sustain cultural memory.\n\nIn everyday life, I practice cultural curiosity and sharing. I try to learn the history and original names of dishes, share meals with friends from different backgrounds, and treat cooking as an act of communication, empathy, and identity-building.\n\nThis course has changed the way I view food: it is more than consumption — it is a medium to connect, remember, and express who we are. Through cooking, I feel both rooted in my heritage and open to the world."
     },
     "quote": "For me, every meal is a story.",
+    "photo": ""
+  },
+  "aziz": {
+    "name": "Aziz Axmedzyanov",
+    "role": "4204787",
+    "autobiography": "",
+    "reflection": {
+      "keyLearnings": "",
+      "motto": "",
+      "applyingThemes": ""
+    },
+    "quote": "We all eat, and it would be a sad waste of opportunity to eat badly.",
     "photo": ""
   }
 }

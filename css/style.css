@@ -368,6 +368,10 @@ nav a.active::before {
   opacity: 0.95;
 }
 
+.team-list.about {
+  text-align: justify;
+}
+
 footer {
   background: linear-gradient(135deg, #2a2a2a 0%, #333 50%, #2a2a2a 100%);
   color: #fff;
@@ -508,6 +512,10 @@ footer p {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reflection-content p {
+  text-align: justify;
 }
 
 .reflection-box {

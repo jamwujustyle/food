@@ -722,6 +722,9 @@ h3.reveal {
   position: relative;
   z-index: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .research-hero p {

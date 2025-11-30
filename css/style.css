@@ -372,6 +372,10 @@ nav a.active::before {
   text-align: justify;
 }
 
+.team-list h1 {
+  text-align: center;
+}
+
 footer {
   background: linear-gradient(135deg, #2a2a2a 0%, #333 50%, #2a2a2a 100%);
   color: #fff;

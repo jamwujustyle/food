@@ -4,7 +4,9 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfaf6;
+  background:
+    linear-gradient(rgba(253, 250, 246, 0.88), rgba(253, 250, 246, 0.88)),
+    url('../poster_with_the_topic_Migration,_Memory,_and_the_Language_of_Home.jpg') center/cover no-repeat fixed;
   color: #4a4a4a;
   line-height: 1.6;
   display: flex;

@@ -4,12 +4,30 @@
 .conclusion-hero {
   text-align: center;
   padding: 5rem 2rem 3rem;
+  background: linear-gradient(135deg, rgba(217, 140, 95, 0.95) 0%, rgba(232, 165, 119, 0.95) 50%, rgba(217, 140, 95, 0.95) 100%);
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+/* OPTION: Adjust overlay opacity - change the 0.88 values above to:
+   0.80 = more poster visible (less overlay)
+   0.90 = less poster visible (more overlay)
+   0.95 = very subtle poster (mostly overlay)
+*/
+
+/* OPTION 3: Hero without poster (original style - uncomment to revert)
+.conclusion-hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
   background: linear-gradient(135deg, #d98c5f 0%, #e8a577 50%, #d98c5f 100%);
   background-size: 200% 200%;
   animation: gradientFlow 8s ease infinite;
   position: relative;
   overflow: hidden;
 }
+*/
 
 @keyframes gradientFlow {
   0%,
